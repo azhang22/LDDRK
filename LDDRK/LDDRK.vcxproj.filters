@@ -13,5 +13,55 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{2705de46-fdd9-440d-98d8-f8022e9e63da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="air.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="airpore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="calculation_2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FFT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="porous.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="air.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="airpore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="calculation_2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mygeneral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="porous.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="coordi_air.dat">
+      <Filter>Source Files\Input</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt">
+      <Filter>Source Files\Input</Filter>
+    </Text>
   </ItemGroup>
 </Project>

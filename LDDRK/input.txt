@@ -1,0 +1,44 @@
+	0.2633 //gaussian_width
+	601 11 11 0 //Moving domain:MF_IMAX; Moving distance: MF_I
+	1 //scheme:1.FB_v_p 2.FB_p_v 3.FB_vp 4.LeapTrap 5.RK4 6.RK2 7.ABM ;
+	1 1 1 1 //NorthBC SouthBC WestBC EastBC and
+			//B.C type: 1.rigid 2.absorbing layer 3.porous media 4.radiation boundary condition;  
+	5001 500 19 300 //time_domain;out_difft(output each this value);FFT_m(2^FFT_m=N);frequency;
+
+	3.0 4 //b(Vav=b*z);
+	1.4 1.607142857e9 5326.241726 5326.241736 1.9 0.0 0.0 //AirPara.adiabatic_coef;AirPara.Pav;AirPara.temperature1 for ground;
+			//AirPara.temperature2 for 10m Air;
+	-1.0 -1.0 200 //AbsorbPara.Cs;AbsorbPara.porosity;AbsorbPara.resistivity;
+	3.0 0.3 1.0e5 //PorePara.Cs;PorePara.porosity;PorePara.resistivity;
+	0.0 0.03 0.03 0.03 //airpore: source.y;source.z;receiver.y;receiver.z;
+	
+	5.0e-9 //AirStep.diff_t;
+	5.0e-5 5.0e-5 //AirStep.diff_y;AirStep.diff_z;
+	0 12 5 0 //AirFrame.left;AirFrame.right;AirFrame.upper;AirFrame.lower;
+	
+	0.02 0.02 //NorthStep.diff_y;NorthStep.diff_z;
+	0 16 6.5 5 //NorthFrame.left;NorthFrame.right;NorthFrame.upper;NorthFrame.lower;
+	0 0 0 0 //SouthFrame.left;SouthFrame.right;SouthFrame.upper;SouthFrame.lower;
+	0 0 //WestStep.diff_y;WestStep.diff_z;
+	0 0 0 0 //WestFrame.left;WestFrame.right;WestFrame.upper;WestFrame.lower;
+	0 0 0 0 //WestSouthFrame.left;WestSouthFrame.right;WestSouthFrame.upper;WestSouthFrame.lower;
+	0 0 0 0 //WestNorthFrame.left;WestNorthFrame.right;WestNorthFrame.upper;WestNorthFrame.lower;
+	0 0 //EastStep.diff_y;EastStep.diff_z;
+	0 0 0 0 //EastFrame.left;EastFrame.right;EastFrame.upper;EastFrame.lower;
+	0 0 0 0 //EastSouthFrame.left;EastSouthFrame.right;EastSouthFrame.upper;EastSouthFrame.lower;
+	0 0 0 0 //EastNorthFrame.left;EastNorthFrame.right;EastNorthFrame.upper;EastNorthFrame.lower;
+	
+	1 1 // mpi_yarea, mpi_zarea
+
+	output.data
+	0 1600 ct.dat
+	
+	0 3.5 4 2 4.5 0.04 0.0 0.0 0.0 0.0 0.0 0.0 0.0 19 //Curve:0:no.;1:cir.;2:cur.;cof.a;b;c;d~l;curve_pt;
+	0 0.03 0 0.02 //ystar,ystop;zstar,zstop;
+
+	0 16 0 -1 //porous_media:SouthFrame.left;SouthFrame.right;SouthFrame.upper;SouthFrame.lower;
+	0.01 0.01 //SouthStep.diff_y;SouthStep.diff_z;
+	0 0 0 0	  //EastFrame.left;EastFrame.right;EastFrame.upper;EastFrame.lower;
+	0 0 //EastFrame.diff_y;EastFrame.diff_z;
+	0 0 0 0	  //WestFrame.left;WestFrame.right;WestFrame.upper;WestFrame.lower;
+	0 0 //WestFrame.diff_y;WestFrame.diff_z;	

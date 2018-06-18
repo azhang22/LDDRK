@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LDDRK", "LDDRK\LDDRK.vcxproj", "{F40FDD4D-E18A-4F62-BE7E-D7A8C5FDE805}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F40FDD4D-E18A-4F62-BE7E-D7A8C5FDE805}.Debug|x64.ActiveCfg = Debug|x64
+		{F40FDD4D-E18A-4F62-BE7E-D7A8C5FDE805}.Debug|x64.Build.0 = Debug|x64
+		{F40FDD4D-E18A-4F62-BE7E-D7A8C5FDE805}.Debug|x86.ActiveCfg = Debug|Win32
+		{F40FDD4D-E18A-4F62-BE7E-D7A8C5FDE805}.Debug|x86.Build.0 = Debug|Win32
+		{F40FDD4D-E18A-4F62-BE7E-D7A8C5FDE805}.Release|x64.ActiveCfg = Release|x64
+		{F40FDD4D-E18A-4F62-BE7E-D7A8C5FDE805}.Release|x64.Build.0 = Release|x64
+		{F40FDD4D-E18A-4F62-BE7E-D7A8C5FDE805}.Release|x86.ActiveCfg = Release|Win32
+		{F40FDD4D-E18A-4F62-BE7E-D7A8C5FDE805}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1DF60715-A6FE-426E-A7E9-85A92B198892}
+	EndGlobalSection
+EndGlobal
